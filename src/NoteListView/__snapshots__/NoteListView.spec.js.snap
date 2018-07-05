@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NoteListView component should display an empty list with no note 1`] = `
+exports[`NoteListView component should display an empty list when no note 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
+      "alignItems": "stretch",
       "backgroundColor": "#F5FCFF",
       "flex": 1,
-      "justifyContent": "center",
+      "justifyContent": "flex-start",
     }
   }
 >
@@ -25,6 +25,594 @@ exports[`NoteListView component should display an empty list with no note 1`] = 
   >
     Vous n'avez pas de notes
   </Text>
+  <View
+    style={
+      Object {
+        "bottom": 20,
+        "position": "absolute",
+        "right": 20,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType="button"
+      accessibilityTraits={
+        Array [
+          "button",
+        ]
+      }
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#007AFF",
+                "fontSize": 18,
+                "padding": 8,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Create
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`NoteListView component should display title note when 1 note 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "#F5FCFF",
+      "flex": 1,
+      "justifyContent": "flex-start",
+    }
+  }
+>
+  <RCTScrollView
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title
+      </Text>
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "bottom": 20,
+        "position": "absolute",
+        "right": 20,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType="button"
+      accessibilityTraits={
+        Array [
+          "button",
+        ]
+      }
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#007AFF",
+                "fontSize": 18,
+                "padding": 8,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Create
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`NoteListView component should display title note when 2 notes 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "#F5FCFF",
+      "flex": 1,
+      "justifyContent": "flex-start",
+    }
+  }
+>
+  <RCTScrollView
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 2
+      </Text>
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "bottom": 20,
+        "position": "absolute",
+        "right": 20,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType="button"
+      accessibilityTraits={
+        Array [
+          "button",
+        ]
+      }
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#007AFF",
+                "fontSize": 18,
+                "padding": 8,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Create
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`NoteListView component should display title note when many notes 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "#F5FCFF",
+      "flex": 1,
+      "justifyContent": "flex-start",
+    }
+  }
+>
+  <RCTScrollView
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 0
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 1
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 2
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 3
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 4
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 5
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 6
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 7
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 8
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 9
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 10
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 11
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 12
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 13
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 14
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 15
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 16
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 17
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 18
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "borderBottomColor": "darkgrey",
+            "borderBottomWidth": 1,
+            "fontSize": 26,
+            "padding": 20,
+          }
+        }
+      >
+        my title 19
+      </Text>
+    </View>
+  </RCTScrollView>
   <View
     style={
       Object {

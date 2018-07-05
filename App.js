@@ -4,13 +4,13 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { NoteListView } from './src/NoteListView/NoteListView';
-
 
 type Props = {};
 export default class App extends Component<Props> {
 	render() {
-		return <NoteListView/>
+		const notes = [...Array(1).keys()].map(i => ({ title: `my title ${i + 1}` }))
+		return <NoteListView notes={notes} />
 	}
 }
