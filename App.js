@@ -9,6 +9,7 @@ import { Platform } from 'react-native';
 import styled, { css, ThemeProvider } from 'styled-components/native';
 
 import { NoteListView } from './src/NoteListView/NoteListView';
+import { NoteEditor } from './src/NoteEditor/NoteEditor';
 import { range } from './src/helper/range';
 
 const theme = {
@@ -40,7 +41,9 @@ export default class App extends Component<Props> {
     return (
       <ThemeProvider theme={theme}>
         <Root>
-          <NoteListView notes={notes} />
+          {/* <NoteListView notes={notes} /> */}
+          {/* <NoteEditor /> */}
+          <NoteEditor note={{ title: 'test title', content: 'test content' }} />
         </Root>
       </ThemeProvider>
     );
