@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { NoteListView } from './NoteListView';
+import { range } from '../helper/range';
 
 describe('NoteListView component', () => {
   it('should display an empty list when no note', () => {
@@ -21,7 +22,7 @@ describe('NoteListView component', () => {
   });
 
   it('should display title note when many notes', () => {
-    const notes = [...Array(20).keys()].map(i => ({ title: `my title ${i}` }));
+    const notes = range(20).map(i => ({ title: `my title ${i}` }));
     const list = renderer.create(<NoteListView notes={notes} />).toJSON();
     expect(list).toMatchSnapshot();
   });
