@@ -1,5 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  ScrollView,
+  FlatList,
+} from 'react-native';
 import PropTypes from 'prop-types';
 
 export const NoteListView = ({ notes }) => (
@@ -7,12 +14,14 @@ export const NoteListView = ({ notes }) => (
     {!notes || notes.length === 0 ? (
       <Text style={styles.welcome}>Vous n'avez pas de notes</Text>
     ) : (
-      <ScrollView style={{ flex: 1 }}>
-        {notes.map(note => (
-          <Text style={styles.noteTitle} key={note.title}>
-            {note.title}
-          </Text>
-        ))}
+      <ScrollView>
+        <FlatList
+          data={notes}
+          renderItem={({ item: note }) => (
+            <Text style={styles.noteTitle}>{note.title}</Text>
+          )}
+          keyExtractor={note => note.title}
+        />
       </ScrollView>
     )}
     <View style={styles.addNoteButton}>

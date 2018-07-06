@@ -96,29 +96,61 @@ exports[`NoteListView component should display title note when 1 note 1`] = `
     }
   }
 >
-  <RCTScrollView
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
+  <RCTScrollView>
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
+      <RCTScrollView
+        data={
+          Array [
+            Object {
+              "title": "my title",
+            },
+          ]
         }
+        disableVirtualization={false}
+        getItem={[Function]}
+        getItemCount={[Function]}
+        horizontal={false}
+        initialNumToRender={10}
+        keyExtractor={[Function]}
+        maxToRenderPerBatch={10}
+        numColumns={1}
+        onContentSizeChange={[Function]}
+        onEndReachedThreshold={2}
+        onLayout={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={Array []}
+        updateCellsBatchingPeriod={50}
+        viewabilityConfigCallbackPairs={Array []}
+        windowSize={21}
       >
-        my title
-      </Text>
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title
+            </Text>
+          </View>
+        </View>
+      </RCTScrollView>
     </View>
   </RCTScrollView>
   <View
@@ -192,44 +224,84 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
     }
   }
 >
-  <RCTScrollView
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
+  <RCTScrollView>
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
+      <RCTScrollView
+        data={
+          Array [
+            Object {
+              "title": "my title",
+            },
+            Object {
+              "title": "my title 2",
+            },
+          ]
         }
+        disableVirtualization={false}
+        getItem={[Function]}
+        getItemCount={[Function]}
+        horizontal={false}
+        initialNumToRender={10}
+        keyExtractor={[Function]}
+        maxToRenderPerBatch={10}
+        numColumns={1}
+        onContentSizeChange={[Function]}
+        onEndReachedThreshold={2}
+        onLayout={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={Array []}
+        updateCellsBatchingPeriod={50}
+        viewabilityConfigCallbackPairs={Array []}
+        windowSize={21}
       >
-        my title
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 2
-      </Text>
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 2
+            </Text>
+          </View>
+        </View>
+      </RCTScrollView>
     </View>
   </RCTScrollView>
   <View
@@ -303,314 +375,305 @@ exports[`NoteListView component should display title note when many notes 1`] = 
     }
   }
 >
-  <RCTScrollView
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
+  <RCTScrollView>
     <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
+      <RCTScrollView
+        data={
+          Array [
+            Object {
+              "title": "my title 0",
+            },
+            Object {
+              "title": "my title 1",
+            },
+            Object {
+              "title": "my title 2",
+            },
+            Object {
+              "title": "my title 3",
+            },
+            Object {
+              "title": "my title 4",
+            },
+            Object {
+              "title": "my title 5",
+            },
+            Object {
+              "title": "my title 6",
+            },
+            Object {
+              "title": "my title 7",
+            },
+            Object {
+              "title": "my title 8",
+            },
+            Object {
+              "title": "my title 9",
+            },
+            Object {
+              "title": "my title 10",
+            },
+            Object {
+              "title": "my title 11",
+            },
+            Object {
+              "title": "my title 12",
+            },
+            Object {
+              "title": "my title 13",
+            },
+            Object {
+              "title": "my title 14",
+            },
+            Object {
+              "title": "my title 15",
+            },
+            Object {
+              "title": "my title 16",
+            },
+            Object {
+              "title": "my title 17",
+            },
+            Object {
+              "title": "my title 18",
+            },
+            Object {
+              "title": "my title 19",
+            },
+          ]
         }
+        disableVirtualization={false}
+        getItem={[Function]}
+        getItemCount={[Function]}
+        horizontal={false}
+        initialNumToRender={10}
+        keyExtractor={[Function]}
+        maxToRenderPerBatch={10}
+        numColumns={1}
+        onContentSizeChange={[Function]}
+        onEndReachedThreshold={2}
+        onLayout={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={Array []}
+        updateCellsBatchingPeriod={50}
+        viewabilityConfigCallbackPairs={Array []}
+        windowSize={21}
       >
-        my title 0
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 1
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 2
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 3
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 4
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 5
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 6
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 7
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 8
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 9
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 10
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 11
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 12
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 13
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 14
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 15
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 16
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 17
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 18
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "borderBottomColor": "darkgrey",
-            "borderBottomWidth": 1,
-            "fontSize": 26,
-            "padding": 20,
-          }
-        }
-      >
-        my title 19
-      </Text>
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 0
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 1
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 2
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 3
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 4
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 5
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 6
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 7
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 8
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "borderBottomColor": "darkgrey",
+                  "borderBottomWidth": 1,
+                  "fontSize": 26,
+                  "padding": 20,
+                }
+              }
+            >
+              my title 9
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "height": 0,
+              }
+            }
+          />
+        </View>
+      </RCTScrollView>
     </View>
   </RCTScrollView>
   <View
