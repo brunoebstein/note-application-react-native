@@ -1,38 +1,56 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  Button,
-  ScrollView,
-  FlatList,
-} from 'react-native';
+import { Button, ScrollView, FlatList } from 'react-native';
+import styled from 'styled-components/native';
 import PropTypes from 'prop-types';
 
+const NoteListContainer = styled.View`
+  flex: 1;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: #f5fcff;
+`;
+
+const NoNote = styled.Text`
+  font-size: 20;
+  text-align: center;
+  margin: 10px;
+`;
+
+const NoteTitle = styled.Text`
+  padding: 20px;
+  font-size: 26;
+  border-bottom-color: darkgrey;
+  border-bottom-width: 1;
+`;
+
+const AddNoteButton = styled.View`
+  position: absolute;
+  bottom: 20;
+  right: 20;
+`;
+
 export const NoteListView = ({ notes }) => (
-  <View style={styles.container}>
+  <NoteListContainer>
     {!notes || notes.length === 0 ? (
-      <Text style={styles.welcome}>Vous n'avez pas de notes</Text>
+      <NoNote>Vous n'avez pas de notes</NoNote>
     ) : (
       <ScrollView>
         <FlatList
           data={notes}
-          renderItem={({ item: note }) => (
-            <Text style={styles.noteTitle}>{note.title}</Text>
-          )}
+          renderItem={({ item: note }) => <NoteTitle>{note.title}</NoteTitle>}
           keyExtractor={note => note.title}
         />
       </ScrollView>
     )}
-    <View style={styles.addNoteButton}>
+    <AddNoteButton>
       <Button
         onPress={() => {
           debugger;
         }}
         title="Create"
       />
-    </View>
-  </View>
+    </AddNoteButton>
+  </NoteListContainer>
 );
 
 NoteListView.propTypes = {
@@ -42,28 +60,3 @@ NoteListView.propTypes = {
     }),
   ),
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'stretch',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  noteTitle: {
-    fontSize: 26,
-    padding: 20,
-    borderBottomColor: 'darkgrey',
-    borderBottomWidth: 1,
-  },
-  addNoteButton: {
-    position: 'absolute',
-    bottom: 20,
-    right: 20,
-  },
-});

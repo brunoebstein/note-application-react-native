@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+
 import { NoteListView } from './NoteListView';
 import { range } from '../helper/range';
 
