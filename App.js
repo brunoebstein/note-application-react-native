@@ -5,8 +5,21 @@
  */
 
 import React, { Component } from 'react';
+import { Platform } from 'react-native';
+import styled, { css } from 'styled-components/native';
+
 import { NoteListView } from './src/NoteListView/NoteListView';
 import { range } from './src/helper/range';
+
+const Root = styled.View`
+  flex: 1;
+
+  ${Platform.select({
+    ios: css`
+      padding-top: 20;
+    `,
+  })};
+`;
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -14,6 +27,10 @@ export default class App extends Component<Props> {
     const notes = range(20).map(i => ({
       title: `my title ${i + 1}`,
     }));
-    return <NoteListView notes={notes} />;
+    return (
+      <Root>
+        <NoteListView notes={notes} />
+      </Root>
+    );
   }
 }
