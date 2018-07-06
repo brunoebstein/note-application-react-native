@@ -1,35 +1,36 @@
 import React from 'react';
 import { Button, ScrollView, FlatList } from 'react-native';
-import styled from 'styled-components/native';
+import styled, { withTheme } from 'styled-components/native';
+import get from 'lodash.get';
 import PropTypes from 'prop-types';
 
 const NoteListContainer = styled.View`
   flex: 1;
-  justify-content: flex-start;
-  align-items: stretch;
-  background-color: #f5fcff;
+  background-color: ${props => get(props, 'theme.main.bgColor', 'white')};
 `;
 
 const NoNote = styled.Text`
-  font-size: 20;
-  text-align: center;
   margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: ${props => get(props, 'theme.main.fgColor', 'black')};
 `;
 
 const NoteTitle = styled.Text`
   padding: 20px;
-  font-size: 26;
-  border-bottom-color: darkgrey;
-  border-bottom-width: 1;
+  font-size: 26px;
+  color: ${props => get(props, 'theme.main.fgColor', 'black')};
+  border-bottom-color: ${props => get(props, 'theme.main.fgColor', 'black')};
+  border-bottom-width: 1px;
 `;
 
-const AddNoteButton = styled.View`
+const FloatingActionButton = styled.View`
   position: absolute;
-  bottom: 20;
-  right: 20;
+  bottom: 20px;
+  right: 20px;
 `;
 
-export const NoteListView = ({ notes }) => (
+const NoteListViewWithoutTheme = ({ notes, theme }) => (
   <NoteListContainer>
     {!notes || notes.length === 0 ? (
       <NoNote>Vous n'avez pas de notes</NoNote>
@@ -42,21 +43,24 @@ export const NoteListView = ({ notes }) => (
         />
       </ScrollView>
     )}
-    <AddNoteButton>
+    <FloatingActionButton>
       <Button
         onPress={() => {
           debugger;
         }}
         title="Create"
+        color={get(theme, 'primary.color')}
       />
-    </AddNoteButton>
+    </FloatingActionButton>
   </NoteListContainer>
 );
 
-NoteListView.propTypes = {
+NoteListViewWithoutTheme.propTypes = {
   notes: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
     }),
   ),
 };
+
+export const NoteListView = withTheme(NoteListViewWithoutTheme);

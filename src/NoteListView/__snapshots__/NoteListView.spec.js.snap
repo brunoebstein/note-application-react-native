@@ -5,12 +5,10 @@ exports[`NoteListView component should display an empty list when no note 1`] = 
   style={
     Array [
       Object {
-        "alignItems": "stretch",
-        "backgroundColor": "#f5fcff",
+        "backgroundColor": "white",
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
-        "justifyContent": "flex-start",
       },
       undefined,
     ]
@@ -23,6 +21,7 @@ exports[`NoteListView component should display an empty list when no note 1`] = 
     style={
       Array [
         Object {
+          "color": "black",
           "fontSize": 20,
           "marginBottom": 10,
           "marginLeft": 10,
@@ -104,12 +103,10 @@ exports[`NoteListView component should display title note when 1 note 1`] = `
   style={
     Array [
       Object {
-        "alignItems": "stretch",
-        "backgroundColor": "#f5fcff",
+        "backgroundColor": "white",
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
-        "justifyContent": "flex-start",
       },
       undefined,
     ]
@@ -159,8 +156,9 @@ exports[`NoteListView component should display title note when 1 note 1`] = `
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -246,12 +244,10 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
   style={
     Array [
       Object {
-        "alignItems": "stretch",
-        "backgroundColor": "#f5fcff",
+        "backgroundColor": "white",
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
-        "justifyContent": "flex-start",
       },
       undefined,
     ]
@@ -304,8 +300,9 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -330,8 +327,9 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -417,12 +415,10 @@ exports[`NoteListView component should display title note when many notes 1`] = 
   style={
     Array [
       Object {
-        "alignItems": "stretch",
-        "backgroundColor": "#f5fcff",
+        "backgroundColor": "white",
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
-        "justifyContent": "flex-start",
       },
       undefined,
     ]
@@ -529,8 +525,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -555,8 +552,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -581,8 +579,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -607,8 +606,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -633,8 +633,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -659,8 +660,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -685,8 +687,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -711,8 +714,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -737,8 +741,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,
@@ -763,8 +768,9 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               style={
                 Array [
                   Object {
-                    "borderBottomColor": "darkgrey",
+                    "borderBottomColor": "black",
                     "borderBottomWidth": 1,
+                    "color": "black",
                     "fontSize": 26,
                     "paddingBottom": 20,
                     "paddingLeft": 20,

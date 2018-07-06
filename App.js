@@ -6,10 +6,20 @@
 
 import React, { Component } from 'react';
 import { Platform } from 'react-native';
-import styled, { css } from 'styled-components/native';
+import styled, { css, ThemeProvider } from 'styled-components/native';
 
 import { NoteListView } from './src/NoteListView/NoteListView';
 import { range } from './src/helper/range';
+
+const theme = {
+  main: {
+    fgColor: '#FFF',
+    bgColor: '#222',
+  },
+  primary: {
+    color: 'royalblue',
+  },
+};
 
 const Root = styled.View`
   flex: 1;
@@ -28,9 +38,11 @@ export default class App extends Component<Props> {
       title: `my title ${i + 1}`,
     }));
     return (
-      <Root>
-        <NoteListView notes={notes} />
-      </Root>
+      <ThemeProvider theme={theme}>
+        <Root>
+          <NoteListView notes={notes} />
+        </Root>
+      </ThemeProvider>
     );
   }
 }
