@@ -3,12 +3,17 @@
 exports[`NoteListView component should display an empty list when no note 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "stretch",
-      "backgroundColor": "#F5FCFF",
-      "flex": 1,
-      "justifyContent": "flex-start",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "backgroundColor": "#f5fcff",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+      },
+      undefined,
+    ]
   }
 >
   <Text
@@ -16,22 +21,31 @@ exports[`NoteListView component should display an empty list when no note 1`] = 
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "fontSize": 20,
-        "margin": 10,
-        "textAlign": "center",
-      }
+      Array [
+        Object {
+          "fontSize": 20,
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        },
+        undefined,
+      ]
     }
   >
     Vous n'avez pas de notes
   </Text>
   <View
     style={
-      Object {
-        "bottom": 20,
-        "position": "absolute",
-        "right": 20,
-      }
+      Array [
+        Object {
+          "bottom": 20,
+          "position": "absolute",
+          "right": 20,
+        },
+        undefined,
+      ]
     }
   >
     <View
@@ -88,12 +102,17 @@ exports[`NoteListView component should display an empty list when no note 1`] = 
 exports[`NoteListView component should display title note when 1 note 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "stretch",
-      "backgroundColor": "#F5FCFF",
-      "flex": 1,
-      "justifyContent": "flex-start",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "backgroundColor": "#f5fcff",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+      },
+      undefined,
+    ]
   }
 >
   <RCTScrollView>
@@ -138,12 +157,18 @@ exports[`NoteListView component should display title note when 1 note 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title
@@ -155,11 +180,14 @@ exports[`NoteListView component should display title note when 1 note 1`] = `
   </RCTScrollView>
   <View
     style={
-      Object {
-        "bottom": 20,
-        "position": "absolute",
-        "right": 20,
-      }
+      Array [
+        Object {
+          "bottom": 20,
+          "position": "absolute",
+          "right": 20,
+        },
+        undefined,
+      ]
     }
   >
     <View
@@ -216,12 +244,17 @@ exports[`NoteListView component should display title note when 1 note 1`] = `
 exports[`NoteListView component should display title note when 2 notes 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "stretch",
-      "backgroundColor": "#F5FCFF",
-      "flex": 1,
-      "justifyContent": "flex-start",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "backgroundColor": "#f5fcff",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+      },
+      undefined,
+    ]
   }
 >
   <RCTScrollView>
@@ -269,12 +302,18 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title
@@ -289,12 +328,18 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 2
@@ -306,11 +351,14 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
   </RCTScrollView>
   <View
     style={
-      Object {
-        "bottom": 20,
-        "position": "absolute",
-        "right": 20,
-      }
+      Array [
+        Object {
+          "bottom": 20,
+          "position": "absolute",
+          "right": 20,
+        },
+        undefined,
+      ]
     }
   >
     <View
@@ -367,12 +415,17 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
 exports[`NoteListView component should display title note when many notes 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "stretch",
-      "backgroundColor": "#F5FCFF",
-      "flex": 1,
-      "justifyContent": "flex-start",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "backgroundColor": "#f5fcff",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+      },
+      undefined,
+    ]
   }
 >
   <RCTScrollView>
@@ -474,12 +527,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 0
@@ -494,12 +553,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 1
@@ -514,12 +579,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 2
@@ -534,12 +605,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 3
@@ -554,12 +631,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 4
@@ -574,12 +657,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 5
@@ -594,12 +683,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 6
@@ -614,12 +709,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 7
@@ -634,12 +735,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 8
@@ -654,12 +761,18 @@ exports[`NoteListView component should display title note when many notes 1`] = 
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
-                Object {
-                  "borderBottomColor": "darkgrey",
-                  "borderBottomWidth": 1,
-                  "fontSize": 26,
-                  "padding": 20,
-                }
+                Array [
+                  Object {
+                    "borderBottomColor": "darkgrey",
+                    "borderBottomWidth": 1,
+                    "fontSize": 26,
+                    "paddingBottom": 20,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "paddingTop": 20,
+                  },
+                  undefined,
+                ]
               }
             >
               my title 9
@@ -678,11 +791,14 @@ exports[`NoteListView component should display title note when many notes 1`] = 
   </RCTScrollView>
   <View
     style={
-      Object {
-        "bottom": 20,
-        "position": "absolute",
-        "right": 20,
-      }
+      Array [
+        Object {
+          "bottom": 20,
+          "position": "absolute",
+          "right": 20,
+        },
+        undefined,
+      ]
     }
   >
     <View
