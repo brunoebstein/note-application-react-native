@@ -10,6 +10,7 @@
     "run-both": "npm run run-ios | npm run run-android"
   },
   "dependencies": {
+    "lodash.get": "^4.4.2",
     "prettier": "^1.13.7",
     "prop-types": "^15.6.2",
     "react": "16.3.1",
