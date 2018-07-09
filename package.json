@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "lodash.get": "^4.4.2",
+    "lodash.isequal": "^4.5.0",
     "prop-types": "^15.6.2",
     "react": "16.3.1",
     "react-native": "0.55.4",
