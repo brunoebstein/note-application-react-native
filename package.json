@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "lodash.get": "^4.4.2",
-    "prettier": "^1.13.7",
     "prop-types": "^15.6.2",
     "react": "16.3.1",
     "react-native": "0.55.4",
@@ -21,6 +20,7 @@
     "babel-jest": "23.2.0",
     "babel-preset-react-native": "4.0.0",
     "jest": "23.2.0",
+    "prettier": "^1.13.7",
     "react-test-renderer": "16.3.1"
   },
   "jest": {
