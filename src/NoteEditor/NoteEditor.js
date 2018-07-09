@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, TextInput, StyleSheet, Button } from 'react-native';
 import PropTypes from 'prop-types';
+import isEqual from 'lodash.isequal';
 
 export class NoteEditor extends Component {
   static propTypes = {
@@ -10,16 +11,35 @@ export class NoteEditor extends Component {
     }),
   };
 
+  constructor(props) {
+    super(props);
+
+    const note = props.note;
+    this.state = { note };
+  }
+
+  componentWillReceiveProps(newProps) {
+    const note = newProps.note;
+    this.setState({ note });
+  }
+
   render() {
-    const { note: { title, content } = {} } = this.props;
+    const { note: propsNote } = this.props;
+    const { note: stateNote, note: { title, content } = {} } = this.state;
+
     return (
       <View style={styles.container}>
-        <TextInput placeholder="Title" defaultValue={title} />
+        <TextInput
+          placeholder="Title"
+          defaultValue={title}
+          onChangeText={this._updateTitle}
+        />
         <View style={styles.contentInput}>
           <TextInput
             placeholder="Content"
             multiline={true}
             defaultValue={content}
+            onChangeText={this._updateContent}
           />
         </View>
         <View style={styles.buttonGroup}>
@@ -34,12 +54,32 @@ export class NoteEditor extends Component {
               debugger;
             }}
             title="Save"
-            disabled={true}
+            disabled={isEqual(stateNote, propsNote)}
           />
         </View>
       </View>
     );
   }
+
+  _updateTitle = title => {
+    this.setState(state => ({
+      ...state,
+      note: {
+        ...state.note,
+        title,
+      },
+    }));
+  };
+
+  _updateContent = content => {
+    this.setState(state => ({
+      ...state,
+      note: {
+        ...state.note,
+        content,
+      },
+    }));
+  };
 }
 
 const styles = StyleSheet.create({
