@@ -1,9 +1,4 @@
-import { range } from '../helper/range';
-
-// @TODO: replace with empty array
-const defaultState = range(20).map(i => ({
-  title: `my title ${i + 1}`,
-}));
+const defaultState = [];
 
 export const notesReducer = (state = defaultState, action) => {
   return state;
