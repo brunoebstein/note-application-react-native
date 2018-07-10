@@ -1,3 +1,5 @@
+import './ReactotronConfig';
+
 import React from 'react';
 import { Platform } from 'react-native';
 import styled, { css, ThemeProvider } from 'styled-components/native';
