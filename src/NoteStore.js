@@ -2,10 +2,10 @@ import React from 'react';
 import { Provider as StoreProvider } from 'react-redux';
 import { createStore } from 'redux';
 
-import { notesReducer } from './NoteListView/notesReducer';
+import { appReducer } from './appReducer';
 
 const store = createStore(
-  notesReducer,
+  appReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 

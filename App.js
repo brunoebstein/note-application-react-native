@@ -4,10 +4,9 @@ import React from 'react';
 import { Platform } from 'react-native';
 import styled, { css, ThemeProvider } from 'styled-components/native';
 
-import { NoteEditor } from './src/NoteEditor/NoteEditor';
-
 import { NoteStore } from './src/NoteStore';
 import { NoteListViewWired } from './src/NoteListView/NoteListViewWired';
+import { NoteEditorWired } from './src/NoteEditor/NoteEditorWired';
 
 const theme = {
   main: {
@@ -34,8 +33,7 @@ const App = () => (
     <NoteStore>
       <Root>
         <NoteListViewWired />
-        {/* <NoteEditor /> */}
-        <NoteEditor note={{ title: 'test title', content: 'test content' }} />
+        <NoteEditorWired />
       </Root>
     </NoteStore>
   </ThemeProvider>

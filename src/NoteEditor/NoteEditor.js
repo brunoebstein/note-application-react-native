@@ -25,7 +25,11 @@ export class NoteEditor extends Component {
 
   render() {
     const { note: propsNote } = this.props;
-    const { note: stateNote, note: { title, content } = {} } = this.state;
+    const { note: stateNote } = this.state;
+    const { title, content } = stateNote || {
+      title: undefined,
+      content: undefined,
+    };
 
     return (
       <View style={styles.container}>
