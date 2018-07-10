@@ -1,16 +1,11 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
+import React from 'react';
 import { Platform } from 'react-native';
 import styled, { css, ThemeProvider } from 'styled-components/native';
 
-import { NoteListView } from './src/NoteListView/NoteListView';
 import { NoteEditor } from './src/NoteEditor/NoteEditor';
-import { range } from './src/helper/range';
+
+import { NoteStore } from './src/NoteStore';
+import { NoteListViewWired } from './src/NoteListView/NoteListViewWired';
 
 const theme = {
   main: {
@@ -32,20 +27,16 @@ const Root = styled.View`
   })};
 `;
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    const notes = range(20).map(i => ({
-      title: `my title ${i + 1}`,
-    }));
-    return (
-      <ThemeProvider theme={theme}>
-        <Root>
-          {/* <NoteListView notes={notes} /> */}
-          {/* <NoteEditor /> */}
-          <NoteEditor note={{ title: 'test title', content: 'test content' }} />
-        </Root>
-      </ThemeProvider>
-    );
-  }
-}
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <NoteStore>
+      <Root>
+        <NoteListViewWired />
+        {/* <NoteEditor /> */}
+        <NoteEditor note={{ title: 'test title', content: 'test content' }} />
+      </Root>
+    </NoteStore>
+  </ThemeProvider>
+);
+
+export default App;
