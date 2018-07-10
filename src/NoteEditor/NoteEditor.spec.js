@@ -69,5 +69,27 @@ describe('a NoteEditor', () => {
           .prop('disabled'),
       ).toEqual(false);
     });
+
+    it('should call the save callback when tapping on save button', () => {
+      const callback = jest.fn();
+      const editor = shallow(<NoteEditor note={note} saveNote={callback} />);
+      editor.setState({
+        note: {
+          title: 'test title',
+          content: 'test content changed',
+        },
+      });
+
+      editor
+        .find('Button')
+        .last()
+        .simulate('press');
+
+      expect(callback).toHaveBeenCalledTimes(1);
+      expect(callback).toHaveBeenCalledWith({
+        title: 'test title',
+        content: 'test content changed',
+      });
+    });
   });
 });

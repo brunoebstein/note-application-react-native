@@ -2,8 +2,19 @@ import { notesReducer } from './notesReducer';
 
 describe('notesReducer', () => {
   it('should gives an empty array by default', () => {
-    const result = notesReducer();
+    const state = notesReducer();
 
-    expect(result).toEqual([]);
+    expect(state).toEqual([]);
+  });
+
+  it('should add a note to the list', () => {
+    const action = {
+      type: 'SAVE_NOTE',
+      payload: { title: 'my new note', content: 'my content' },
+    };
+
+    const state = notesReducer(undefined, action);
+
+    expect(state).toEqual([{ title: 'my new note', content: 'my content' }]);
   });
 });

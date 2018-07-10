@@ -1,5 +1,10 @@
 const defaultState = [];
 
 export const notesReducer = (state = defaultState, action) => {
-  return state;
+  switch (action && action.type) {
+    case 'SAVE_NOTE':
+      return state.concat(action.payload);
+    default:
+      return state;
+  }
 };

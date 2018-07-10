@@ -9,6 +9,7 @@ export class NoteEditor extends Component {
       title: PropTypes.string.isRequired,
       content: PropTypes.string.isRequired,
     }),
+    saveNote: PropTypes.func,
   };
 
   constructor(props) {
@@ -54,9 +55,7 @@ export class NoteEditor extends Component {
             title="Cancel"
           />
           <Button
-            onPress={() => {
-              debugger;
-            }}
+            onPress={this.save}
             title="Save"
             disabled={isEqual(stateNote, propsNote)}
           />
@@ -83,6 +82,12 @@ export class NoteEditor extends Component {
         content,
       },
     }));
+  };
+
+  save = () => {
+    if (typeof this.props.saveNote !== 'function') return;
+
+    this.props.saveNote(this.state.note);
   };
 }
 
