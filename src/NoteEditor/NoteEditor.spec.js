@@ -1,3 +1,5 @@
+import { shallow } from 'enzyme';
+
 import { NoteEditor } from './NoteEditor';
 
 describe('a NoteEditor', () => {
