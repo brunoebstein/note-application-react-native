@@ -1,21 +1,17 @@
-import React from 'react';
 import { Provider } from 'react-redux';
-import { create } from 'react-test-renderer';
 import { createStore } from 'redux';
 
 import { NoteEditorWired } from './NoteEditorWired';
 
 describe('NoteEditorWired component', () => {
-  function matchSnapshot(state) {
+  function matchSnapshotWithProvider(state) {
     const store = createStore(() => state);
 
-    const wrapper = create(
+    matchSnapshot(
       <Provider store={store}>
         <NoteEditorWired />
       </Provider>,
-    ).toJSON();
-
-    expect(wrapper).toMatchSnapshot();
+    );
   }
 
   it('should render an empty form without selected note', () => {
@@ -24,7 +20,7 @@ describe('NoteEditorWired component', () => {
       selectedNote: null,
     };
 
-    matchSnapshot(state);
+    matchSnapshotWithProvider(state);
   });
 
   it('should render a prefilled form with selected note', () => {
@@ -33,6 +29,6 @@ describe('NoteEditorWired component', () => {
       selectedNote: { title: 'a title', content: 'a content' },
     };
 
-    matchSnapshot(state);
+    matchSnapshotWithProvider(state);
   });
 });
