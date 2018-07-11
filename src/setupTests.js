@@ -9,3 +9,8 @@ global.React = React;
 
 import { shallow } from 'enzyme';
 global.shallow = shallow;
+
+global.matchSnapshot = function matchSnapshot(component) {
+  const wrapper = shallow(component);
+  expect(wrapper).toMatchSnapshot();
+};

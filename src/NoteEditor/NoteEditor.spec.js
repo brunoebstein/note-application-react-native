@@ -8,13 +8,11 @@ describe('a NoteEditor', () => {
 
   describe('simple render', () => {
     it('should display the editor form when no Note', () => {
-      const editor = shallow(<NoteEditor />);
-      expect(editor).toMatchSnapshot();
+      matchSnapshot(<NoteEditor />);
     });
 
     it('should display the editor form for an existing note', () => {
-      const editor = shallow(<NoteEditor note={note} />);
-      expect(editor).toMatchSnapshot();
+      matchSnapshot(<NoteEditor note={note} />);
     });
   });
 
