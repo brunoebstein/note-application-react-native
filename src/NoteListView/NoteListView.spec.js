@@ -1,5 +1,4 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 
 import { NoteListView } from './NoteListView';
@@ -7,10 +6,10 @@ import { range } from '../helper/range';
 
 describe('NoteListView component', () => {
   function matchSnapshot(element) {
-    const list = renderer
-      .create(<ThemeProvider theme={{}}>{element}</ThemeProvider>)
-      .toJSON();
-    expect(list).toMatchSnapshot();
+    const wrapper = shallow(
+      <ThemeProvider theme={{}}>{element}</ThemeProvider>,
+    );
+    expect(wrapper).toMatchSnapshot();
   }
 
   it('should display an empty list when no note', () => {

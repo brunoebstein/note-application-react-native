@@ -1,6 +1,5 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { create } from 'react-test-renderer';
 import { createStore } from 'redux';
 
 import { NoteEditorWired } from './NoteEditorWired';
@@ -9,11 +8,11 @@ describe('NoteEditorWired component', () => {
   function matchSnapshot(state) {
     const store = createStore(() => state);
 
-    const wrapper = create(
+    const wrapper = shallow(
       <Provider store={store}>
         <NoteEditorWired />
       </Provider>,
-    ).toJSON();
+    );
 
     expect(wrapper).toMatchSnapshot();
   }
