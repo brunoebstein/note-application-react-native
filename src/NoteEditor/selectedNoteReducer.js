@@ -1,11 +1,16 @@
-import { SAVE_NOTE } from '../actionTypes';
+import { SAVE_NOTE, SELECT_NOTE } from '../actionTypes';
 
-const defaultState = null;
+const defaultState = {
+  title: '',
+  content: '',
+};
 
 export const selectedNoteReducer = (state = defaultState, action) => {
   switch (action && action.type) {
     case SAVE_NOTE:
-      return null;
+      return defaultState;
+    case SELECT_NOTE:
+      return action.payload || defaultState;
     default:
       return state;
   }

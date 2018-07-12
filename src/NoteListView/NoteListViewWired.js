@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
 import { notesSelector } from './notesSelector';
+import { selectNote } from './selectNoteAction.js';
 import { NoteListView } from './NoteListView';
 
 const mapStateToProps = state => ({
@@ -9,5 +10,5 @@ const mapStateToProps = state => ({
 
 export const NoteListViewWired = connect(
   mapStateToProps,
-  null,
+  { selectNote },
 )(NoteListView);
