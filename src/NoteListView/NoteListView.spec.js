@@ -1,7 +1,9 @@
 import { ThemeProvider } from 'styled-components';
 
-import { NoteListView } from './NoteListView';
 import { range } from '../helper/range';
+import { matchSnapshot } from '../helper/matchSnapshot';
+
+import { NoteListView } from './NoteListView';
 
 describe('NoteListView component', () => {
   function matchSnapshotWithProvider(element) {

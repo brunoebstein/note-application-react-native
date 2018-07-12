@@ -2,6 +2,8 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { ThemeProvider } from 'styled-components';
 
+import { matchSnapshot } from '../helper/matchSnapshot';
+
 import { NoteListViewWired } from './NoteListViewWired';
 
 describe('NoteListViewWired component', () => {
