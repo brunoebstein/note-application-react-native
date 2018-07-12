@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 
 import { selectedNoteSelector } from './selectedNoteSelector';
+import { saveNote } from './saveNoteAction';
 import { NoteEditor } from './NoteEditor';
 
 const mapStateToProps = state => ({
@@ -9,5 +10,5 @@ const mapStateToProps = state => ({
 
 export const NoteEditorWired = connect(
   mapStateToProps,
-  null,
+  { saveNote },
 )(NoteEditor);
