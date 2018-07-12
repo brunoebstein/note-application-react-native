@@ -1,4 +1,4 @@
-import { shallow } from '../helper/shallow';
+import { mount } from '../helper/mount';
 import { matchSnapshot } from '../helper/matchSnapshot';
 
 import { NoteEditor } from './NoteEditor';
@@ -21,10 +21,10 @@ describe('a NoteEditor', () => {
 
   describe('behavior', () => {
     it('should have a disabled save button', () => {
-      const editor = shallow(<NoteEditor note={note} />);
+      const wrapper = mount(<NoteEditor note={note} />);
 
       expect(
-        editor
+        wrapper
           .find('Button')
           .last()
           .prop('disabled'),
@@ -32,17 +32,14 @@ describe('a NoteEditor', () => {
     });
 
     it('should enable the save button when title change', () => {
-      const editor = shallow(<NoteEditor note={note} />);
+      const wrapper = mount(<NoteEditor note={note} />);
 
-      editor.setState({
-        note: {
-          title: 'test title changed',
-          content: 'test content',
-        },
-      });
+      const input = wrapper.find('TextInput').first();
+      input.prop('onChangeText')('New title');
+      wrapper.update();
 
       expect(
-        editor
+        wrapper
           .find('Button')
           .last()
           .prop('disabled'),
@@ -50,17 +47,14 @@ describe('a NoteEditor', () => {
     });
 
     it('should enable the save button when content change', () => {
-      const editor = shallow(<NoteEditor note={note} />);
+      const wrapper = mount(<NoteEditor note={note} />);
 
-      editor.setState({
-        note: {
-          title: 'test title',
-          content: 'test content changed',
-        },
-      });
+      const input = wrapper.find('TextInput').last();
+      input.prop('onChangeText')('New content');
+      wrapper.update();
 
       expect(
-        editor
+        wrapper
           .find('Button')
           .last()
           .prop('disabled'),
@@ -69,18 +63,18 @@ describe('a NoteEditor', () => {
 
     it('should call the save callback when tapping on save button', () => {
       const callback = jest.fn();
-      const editor = shallow(<NoteEditor note={note} saveNote={callback} />);
-      editor.setState({
+      const wrapper = mount(<NoteEditor note={note} saveNote={callback} />);
+      wrapper.setState({
         note: {
           title: 'test title',
           content: 'test content changed',
         },
       });
 
-      editor
+      wrapper
         .find('Button')
         .last()
-        .simulate('press');
+        .prop('onPress')();
 
       expect(callback).toHaveBeenCalledTimes(1);
       expect(callback).toHaveBeenCalledWith({
