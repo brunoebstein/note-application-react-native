@@ -108,5 +108,6 @@ const styles = StyleSheet.create({
   buttonGroup: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    padding: 20,
   },
 });
