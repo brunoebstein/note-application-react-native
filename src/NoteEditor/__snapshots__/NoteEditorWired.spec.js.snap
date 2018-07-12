@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteEditorWired component should render a prefilled form with selected note 1`] = `<Connect(NoteEditor) />`;
+
+exports[`NoteEditorWired component should render an empty form without selected note 1`] = `<Connect(NoteEditor) />`;

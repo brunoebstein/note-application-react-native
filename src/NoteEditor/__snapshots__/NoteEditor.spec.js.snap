@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`a NoteEditor simple render should display the editor form for an existing note 1`] = `
+<Component
+  style={
+    Object {
+      "flex": 1,
+      "marginTop": 20,
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    defaultValue="test title"
+    onChangeText={[Function]}
+    placeholder="Title"
+  />
+  <Component
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "flex-start",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      defaultValue="test content"
+      multiline={true}
+      onChangeText={[Function]}
+      placeholder="Content"
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Button
+      onPress={[Function]}
+      title="Cancel"
+    />
+    <Button
+      disabled={true}
+      onPress={[Function]}
+      title="Save"
+    />
+  </Component>
+</Component>
+`;
+
+exports[`a NoteEditor simple render should display the editor form when no Note 1`] = `
+<Component
+  style={
+    Object {
+      "flex": 1,
+      "marginTop": 20,
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="Title"
+  />
+  <Component
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "flex-start",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      multiline={true}
+      onChangeText={[Function]}
+      placeholder="Content"
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Button
+      onPress={[Function]}
+      title="Cancel"
+    />
+    <Button
+      disabled={true}
+      onPress={[Function]}
+      title="Save"
+    />
+  </Component>
+</Component>
+`;
