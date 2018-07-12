@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NoteListView component should display an empty list when no note 1`] = `<WithTheme(NoteListViewWithoutTheme) />`;
+exports[`NoteListView component simple render should display an empty list when no note 1`] = `<WithTheme(NoteListViewWithoutTheme) />`;
 
-exports[`NoteListView component should display title note when 1 note 1`] = `
+exports[`NoteListView component simple render should display title note when 1 note 1`] = `
 <WithTheme(NoteListViewWithoutTheme)
   notes={
     Array [
@@ -14,7 +14,7 @@ exports[`NoteListView component should display title note when 1 note 1`] = `
 />
 `;
 
-exports[`NoteListView component should display title note when 2 notes 1`] = `
+exports[`NoteListView component simple render should display title note when 2 notes 1`] = `
 <WithTheme(NoteListViewWithoutTheme)
   notes={
     Array [
@@ -29,7 +29,7 @@ exports[`NoteListView component should display title note when 2 notes 1`] = `
 />
 `;
 
-exports[`NoteListView component should display title note when many notes 1`] = `
+exports[`NoteListView component simple render should display title note when many notes 1`] = `
 <WithTheme(NoteListViewWithoutTheme)
   notes={
     Array [
