@@ -434,21 +434,6 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
-"@jonny/react-native-mock@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@jonny/react-native-mock/-/react-native-mock-0.4.2.tgz#945efd108960cfca5c878a7af6af4bbbfff2f9e7"
-  dependencies:
-    create-react-class "^15.5.1"
-    cubic-bezier "^0.1.2"
-    invariant "^2.2.1"
-    keymirror "^0.1.1"
-    prop-types "^15.5.6"
-    raf "^3.2.0"
-    react-dom "^16.3.2"
-    react-test-renderer "^16.3.2"
-    react-timer-mixin "^0.13.3"
-    warning "^2.1.0"
-
 "@types/node@*":
   version "10.5.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.2.tgz#f19f05314d5421fe37e74153254201a7bf00a707"
@@ -1736,7 +1721,7 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-create-react-class@^15.5.1, create-react-class@^15.6.3:
+create-react-class@^15.6.2, create-react-class@^15.6.3:
   version "15.6.3"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
   dependencies:
@@ -3421,7 +3406,7 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
-jsdom@^11.5.1:
+jsdom@^11.11.0, jsdom@^11.5.1:
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.11.0.tgz#df486efad41aee96c59ad7a190e2449c7eb1110e"
   dependencies:
@@ -4541,7 +4526,7 @@ prompts@^0.1.9:
     clorox "^1.0.3"
     sisteransi "^0.1.1"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -4631,7 +4616,7 @@ react-devtools-core@3.1.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-dom@^16.3.2:
+react-dom@^16.0.0:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
   dependencies:
@@ -4643,6 +4628,21 @@ react-dom@^16.3.2:
 react-is@^16.3.1, react-is@^16.4.1:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.1.tgz#d624c4650d2c65dbd52c72622bbf389435d9776e"
+
+react-native-mock-render@^0.0.27:
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/react-native-mock-render/-/react-native-mock-render-0.0.27.tgz#51b816d1ca2d4b687559b847387288500561add8"
+  dependencies:
+    create-react-class "^15.6.2"
+    cubic-bezier "^0.1.2"
+    invariant "^2.2.1"
+    keymirror "^0.1.1"
+    lodash "^4.15.0"
+    prop-types "^15.6.0"
+    raf "^3.2.0"
+    react-dom "^16.0.0"
+    react-timer-mixin "^0.13.3"
+    warning "^2.1.0"
 
 react-native@0.55.4:
   version "0.55.4"
@@ -4735,7 +4735,7 @@ react-redux@^5.0.7:
     loose-envify "^1.1.0"
     prop-types "^15.6.0"
 
-react-test-renderer@^16.0.0-0, react-test-renderer@^16.3.2:
+react-test-renderer@^16.0.0-0:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.4.1.tgz#f2fb30c2c7b517db6e5b10ed20bb6b0a7ccd8d70"
   dependencies:
