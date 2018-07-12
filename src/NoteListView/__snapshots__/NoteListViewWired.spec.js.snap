@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NoteListViewWired component should render a list of notes 1`] = `
+exports[`NoteListViewWired component simple render should render a list of notes 1`] = `
 <Provider
   store={
     Object {
@@ -16,7 +16,7 @@ exports[`NoteListViewWired component should render a list of notes 1`] = `
 </Provider>
 `;
 
-exports[`NoteListViewWired component should render a message with an empty list 1`] = `
+exports[`NoteListViewWired component simple render should render a message with an empty list 1`] = `
 <Provider
   store={
     Object {

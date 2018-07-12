@@ -1,6 +1,8 @@
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
+import { matchSnapshot } from '../helper/matchSnapshot';
+
 import { NoteEditorWired } from './NoteEditorWired';
 
 describe('NoteEditorWired component', () => {

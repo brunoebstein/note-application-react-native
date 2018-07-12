@@ -1,4 +1,5 @@
-import { shallow } from 'enzyme';
+import { shallow } from '../helper/shallow';
+import { matchSnapshot } from '../helper/matchSnapshot';
 
 import { NoteEditor } from './NoteEditor';
 
