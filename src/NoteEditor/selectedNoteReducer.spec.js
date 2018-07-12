@@ -1,4 +1,5 @@
 import { selectedNoteReducer } from './selectedNoteReducer';
+import { SAVE_NOTE } from '../actionTypes';
 
 describe('selectedNoteReducer', () => {
   it('should gives the notes by default', () => {
@@ -10,7 +11,7 @@ describe('selectedNoteReducer', () => {
   it('should discard selected note when adding a note', () => {
     const prevState = { title: 'my new note', content: 'my content' };
     const action = {
-      type: 'SAVE_NOTE',
+      type: SAVE_NOTE,
       payload: { title: 'my new note', content: 'my content' },
     };
 
