@@ -88,6 +88,11 @@ export class NoteEditor extends Component {
     if (typeof this.props.saveNote !== 'function') return;
 
     this.props.saveNote(this.state.note);
+
+    this.setState(state => ({
+      ...state,
+      note: {},
+    }));
   };
 }
 
