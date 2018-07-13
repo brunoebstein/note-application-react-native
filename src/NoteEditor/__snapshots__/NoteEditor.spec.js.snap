@@ -34,6 +34,7 @@ exports[`a NoteEditor simple render should display the editor form for an existi
       Object {
         "flexDirection": "row",
         "justifyContent": "space-between",
+        "padding": 20,
       }
     }
   >
@@ -82,6 +83,7 @@ exports[`a NoteEditor simple render should display the editor form when no Note 
       Object {
         "flexDirection": "row",
         "justifyContent": "space-between",
+        "padding": 20,
       }
     }
   >

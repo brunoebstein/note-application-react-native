@@ -5,8 +5,7 @@ import { Platform } from 'react-native';
 import styled, { css, ThemeProvider } from 'styled-components/native';
 
 import { NoteStore } from './src/NoteStore';
-import { NoteListViewWired } from './src/NoteListView/NoteListViewWired';
-import { NoteEditorWired } from './src/NoteEditor/NoteEditorWired';
+import { NoteNavigator } from './src/NoteNavigator/NoteNavigator';
 
 const theme = {
   main: {
@@ -18,7 +17,7 @@ const theme = {
   },
 };
 
-const Root = styled.View`
+const SystemBarFixer = styled.View`
   flex: 1;
 
   ${Platform.select({
@@ -31,10 +30,9 @@ const Root = styled.View`
 const App = () => (
   <ThemeProvider theme={theme}>
     <NoteStore>
-      <Root>
-        <NoteListViewWired />
-        <NoteEditorWired />
-      </Root>
+      <SystemBarFixer>
+        <NoteNavigator screenProps={{ theme }} />
+      </SystemBarFixer>
     </NoteStore>
   </ThemeProvider>
 );

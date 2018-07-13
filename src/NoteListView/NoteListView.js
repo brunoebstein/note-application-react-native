@@ -30,7 +30,12 @@ const FloatingActionButton = styled.View`
   right: 20px;
 `;
 
-const NoteListViewWithoutTheme = ({ notes, theme, selectNote }) => (
+const NoteListViewWithoutTheme = ({
+  notes,
+  theme,
+  selectNote,
+  onSelectedNote,
+}) => (
   <NoteListContainer>
     {!notes || notes.length === 0 ? (
       <NoNote>Vous n'avez pas de notes</NoNote>
@@ -44,6 +49,10 @@ const NoteListViewWithoutTheme = ({ notes, theme, selectNote }) => (
                 if (typeof selectNote !== 'function') return;
 
                 selectNote(note);
+
+                if (typeof onSelectedNote === 'function') {
+                  onSelectedNote();
+                }
               }}
               key={note.title}
             >
@@ -58,6 +67,10 @@ const NoteListViewWithoutTheme = ({ notes, theme, selectNote }) => (
       <Button
         onPress={() => {
           selectNote();
+
+          if (typeof onSelectedNote === 'function') {
+            onSelectedNote();
+          }
         }}
         title="Create"
         color={get(theme, 'primary.color')}
@@ -73,6 +86,7 @@ NoteListViewWithoutTheme.propTypes = {
     }),
   ),
   selectNote: PropTypes.func,
+  onSelectedNote: PropTypes.func,
 };
 
 export const NoteListView = withTheme(NoteListViewWithoutTheme);
