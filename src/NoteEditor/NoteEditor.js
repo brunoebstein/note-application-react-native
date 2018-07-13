@@ -10,6 +10,8 @@ export class NoteEditor extends Component {
       content: PropTypes.string.isRequired,
     }),
     saveNote: PropTypes.func,
+    onSavedNote: PropTypes.func,
+    onCancel: PropTypes.func,
   };
 
   constructor(props) {
@@ -25,7 +27,7 @@ export class NoteEditor extends Component {
   }
 
   render() {
-    const { note: propsNote } = this.props;
+    const { note: propsNote, onCancel } = this.props;
     const { note: stateNote } = this.state;
     const { title, content } = stateNote || {
       title: undefined,
@@ -50,7 +52,9 @@ export class NoteEditor extends Component {
         <View style={styles.buttonGroup}>
           <Button
             onPress={() => {
-              debugger;
+              if (typeof onCancel === 'function') {
+                onCancel();
+              }
             }}
             title="Cancel"
           />
@@ -88,6 +92,10 @@ export class NoteEditor extends Component {
     if (typeof this.props.saveNote !== 'function') return;
 
     this.props.saveNote(this.state.note);
+
+    if (typeof this.props.onSavedNote === 'function') {
+      this.props.onSavedNote();
+    }
 
     this.setState(state => ({
       ...state,
